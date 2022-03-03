@@ -115,7 +115,7 @@
               ];
               const pm = sensor[data.fields.indexOf(dataType)] || 0;
               const lastSeen = sensor[data.fields.indexOf('last_seen')] || 0;
-              return { lngLat, pm };
+              return { lngLat, pm, lastSeen };
             });
 
             // Add all points to this bounds object so we don't have to calculate the rectangle ourselves
